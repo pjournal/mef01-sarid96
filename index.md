@@ -9,3 +9,6 @@
 #### Homework 1
 My first homework is [Here](DenizSARI-Homework1.html)
 
+#### Homework 2
+Second homework which we did at 6th March 2018 [Here](denizsari36.html)
+
