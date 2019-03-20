@@ -15,5 +15,5 @@ Second homework which we did at 27th February 2018. It was about car data. [Here
 #### Homework 3
 Third homework which we did at 6th March 2018. It was about BKM data.[Here](denizsari36.html)
 
-###Entry of Final Project
+### Entry of Final Project
 The first information about our project. Starting date it 20.03.2019 / [Here](rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr.html)
