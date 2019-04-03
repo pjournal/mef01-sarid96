@@ -1,0 +1,62 @@
+---
+title: "Shiny"
+author: "deniz"
+date: "3 Nisan 2019"
+output: html_document
+---
+
+
+## Shiny
+
+  Today we learned what is shiny and how it works. We used IMDB movie data and we made ggplot with that data while using shiny.
+  
+
+```{r}
+library(shiny)
+```
+ 
+```{r}
+ui <- fluidPage(
+   
+   # Application title
+   titlePanel("Movie Set"),
+   
+   # Sidebar with a slider input for number of bins 
+   sidebarLayout(
+      sidebarPanel(
+         sliderInput("year",
+                     "Movie set from IMDB",
+                     min = 2000,
+                     max = 2005,
+                     value = c(2003,2004)),
+         selectInput("genres","genres",c(genres)),
+         sliderInput("ratings","ratings",min = 0,max = 158000, value=0)),
+         
+      
+      # Show a plot of the generated distribution
+      mainPanel(
+         plotOutput("distPlot")
+      )
+   ))
+
+```
+ 
+ 
+```{r}
+server <- function(input, output) {
+
+   output$distPlot <- renderPlot({
+     mydata <- shiny_movie_set %>% filter(votes >= input$ratings) %>% filter(year >= input$year)
+     ggplot(mydata, aes(x=length, y=rating, color=genre)) +
+       geom_point(stat="identity")
+    
+      # draw the histogram with the specified number of bins
+     
+   })
+}
+
+# Run the application 
+shinyApp(ui = ui, server = server)
+```
+ 
+ 
