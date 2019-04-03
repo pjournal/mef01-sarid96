@@ -19,5 +19,5 @@ Third homework which we did at 6th March 2018. It was about BKM data.[Here](deni
 The first information about our project. Starting date it 20.03.2019 / [Here](rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr.html)
 
 
-### Shiny
-Meeting and learning Shiny. Here is the first project of shiny with IMDB Movie Data [Here](Desktop/shiny03.04.html)
+## First Report
+Today we made the first presentation about our final project.(03/04/2019) And here is the first report of our project. Shows our progress. [Here]
